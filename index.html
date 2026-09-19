@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Olateju Aishat Sotunbo, creative writer, copywriter and storyteller.">
+<title>Olateju Aishat Sotunbo | Writer & Storyteller</title>
+<style>
+:root{
+  --bg:#f7f6f2;
+  --paper:#fffefa;
+  --ink:#171717;
+  --muted:#70706c;
+  --line:#deddd7;
+  --accent:#292929;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.6;
+}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:26px 0;border-bottom:1px solid var(--line);
+  font-size:13px;letter-spacing:.02em;
+}
+.brand{font-weight:700;letter-spacing:.04em}
+.navlinks{display:flex;gap:24px}
+.navlinks a{text-decoration:none;color:var(--muted)}
+.navlinks a:hover{color:var(--ink)}
+.hero{
+  min-height:76vh;display:grid;grid-template-columns:1.05fr .95fr;
+  gap:70px;align-items:center;padding:78px 0 95px;
+}
+.kicker{
+  text-transform:uppercase;font-size:11px;letter-spacing:.18em;
+  color:var(--muted);margin-bottom:22px;
+}
+h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(56px,8vw,102px);line-height:.92;
+  letter-spacing:-.055em;font-weight:500;margin:0 0 30px;
+}
+.hero p{font-size:18px;max-width:590px;color:#454540}
+.hero .small{font-size:13px;color:var(--muted);margin-top:26px}
+.portrait{
+  width:100%;aspect-ratio:1/1;object-fit:cover;filter:grayscale(100%);
+  border-radius:2px;
+}
+section{padding:90px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:42px}
+.section-head h2{
+  font-family:Georgia,"Times New Roman",serif;font-size:48px;
+  font-weight:500;letter-spacing:-.04em;margin:0;
+}
+.section-head p{max-width:390px;color:var(--muted);font-size:14px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{
+  background:var(--paper);border:1px solid var(--line);padding:30px;
+  min-height:270px;display:flex;flex-direction:column;justify-content:space-between;
+}
+.card:hover{border-color:#aaa}
+.tag{text-transform:uppercase;letter-spacing:.13em;font-size:10px;color:var(--muted)}
+.card h3{
+  font-family:Georgia,"Times New Roman",serif;font-size:30px;
+  line-height:1.08;font-weight:500;margin:18px 0 12px;
+}
+.card p{font-size:14px;color:#55524d;max-width:520px}
+.link{
+  display:inline-flex;align-items:center;gap:8px;margin-top:20px;
+  font-size:12px;text-transform:uppercase;letter-spacing:.1em;
+  text-decoration:none;font-weight:700;
+}
+.link span{transition:transform .2s}
+.link:hover span{transform:translateX(4px)}
+.feature{
+  display:grid;grid-template-columns:1fr 1fr;gap:18px;
+}
+.feature .visual{
+  min-height:430px;background:#222;display:flex;align-items:end;padding:32px;color:white;
+}
+.feature .visual h3{
+  font-family:Georgia,serif;font-size:44px;line-height:1;margin:0;max-width:500px;font-weight:500;
+}
+.article{
+  background:var(--paper);border:1px solid var(--line);padding:38px;
+}
+.article .meta{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}
+.article h3{font-family:Georgia,serif;font-size:42px;line-height:1.04;font-weight:500;margin:18px 0}
+.article .excerpt{font-family:Georgia,serif;font-size:20px;line-height:1.5;color:#3d3b37}
+.note{
+  background:#eceae4;padding:22px 24px;font-size:13px;color:#57554f;margin-top:18px;
+}
+.contact{
+  display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;
+}
+.contact h2{font-family:Georgia,serif;font-weight:500;font-size:60px;line-height:.98;margin:0}
+.contact p{color:var(--muted);font-size:15px}
+footer{padding:28px 0 45px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){
+  .navlinks{display:none}
+  .hero,.feature,.contact{grid-template-columns:1fr}
+  .hero{padding:55px 0 70px;gap:45px}
+  h1{font-size:65px}
+  .grid{grid-template-columns:1fr}
+  .section-head{display:block}
+  .section-head h2{font-size:40px;margin-bottom:12px}
+  .contact h2{font-size:48px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <div class="brand">OLATEJU A. SOTUNBO</div>
+  <div class="navlinks">
+    <a href="#work">Work</a>
+    <a href="#writing">Writing</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="about">
+  <div>
+    <div class="kicker">Creative writer · Copywriter · Storyteller</div>
+    <h1>Stories,<br>with something<br>to say.</h1>
+    <p>I write stories, campaigns and ideas that make people pause. My work moves between brand storytelling, advertising, essays and the small human details that are easy to miss.</p>
+    <div class="small">Lagos, Nigeria · Available for creative work</div>
+  </div>
+  <img class="portrait" src="portrait.jpeg" alt="Portrait of Olateju Aishat Sotunbo">
+</header>
+
+<section id="work">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <p>A small collection of writing, campaign concepts and scripts created across brand and editorial projects.</p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <div>
+        <div class="tag">ASMA Creativo · Ad copy</div>
+        <h3>Before the launch, there is a question.</h3>
+        <p>Campaign copy written for ASMA Creativo, focused on the thinking that should happen before a brand enters a new market.</p>
+      </div>
+      <a class="link" href="https://www.instagram.com/p/DZUujP5jNvJ/" target="_blank" rel="noopener">View the work <span>↗</span></a>
+    </article>
+    <article class="card">
+      <div>
+        <div class="tag">ASMA Creativo · Creative writing</div>
+        <h3>Ideas built to make people look twice.</h3>
+        <p>Selected copy and storytelling work created for ASMA Creativo, where strategy meets culture, narrative and sharp creative thinking.</p>
+      </div>
+      <a class="link" href="https://www.instagram.com/p/DZUujP5jNvJ/" target="_blank" rel="noopener">View selected work <span>↗</span></a>
+    </article>
+
+    <article class="card">
+      <div>
+        <div class="tag">ASMA Creativo · Video script</div>
+        <h3>Launch, but make it a story.</h3>
+        <p>A launch video script written for a brand campaign, built to carry an idea through visual storytelling.</p>
+      </div>
+      <a class="link" href="https://www.instagram.com/reel/DWyoTj_jHh2/" target="_blank" rel="noopener">Watch the work <span>↗</span></a>
+    </article>
+
+    <article class="card">
+      <div>
+        <div class="tag">ASMA Creativo · Video script</div>
+        <h3>The story behind the message.</h3>
+        <p>Another completed video script, presented through the published campaign reel.</p>
+      </div>
+      <a class="link" href="https://www.instagram.com/reel/DXohbhCjGg4/" target="_blank" rel="noopener">Watch the work <span>↗</span></a>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <h2>The Story Lens</h2>
+    <p>A visual storytelling project exploring the hidden stories behind ordinary things, culture, brands and people.</p>
+  </div>
+  <div class="feature">
+    <div class="visual">
+      <div>
+        <div class="tag" style="color:#aaa">Personal storytelling project</div>
+        <h3>See the ordinary through a different lens.</h3>
+      </div>
+    </div>
+    <div class="article">
+      <div class="meta">Instagram · @thestory_lens_</div>
+      <h3>Stories hiding in plain sight.</h3>
+      <p class="excerpt">The Story Lens is where curiosity becomes content. Each piece takes something familiar and asks what else might be hiding inside it.</p>
+      <a class="link" href="https://www.instagram.com/thestory_lens_/" target="_blank" rel="noopener">Explore The Story Lens <span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="writing">
+  <div class="section-head">
+    <h2>Writing</h2>
+    <p>Essays and editorial work that sit a little closer to the personal side of storytelling.</p>
+  </div>
+
+  <div class="article">
+    <div class="meta">Velo Pulse · Essay</div>
+    <h3>The Strange Grief of Moving On</h3>
+    <p class="excerpt">Sometimes moving forward is not the same thing as leaving something behind. This essay explores the quieter grief that can come with becoming someone new.</p>
+    <a class="link" href="https://www.velo-pulse.cv/news/58" target="_blank" rel="noopener">Read the full essay <span>↗</span></a>
+  </div>
+
+  <div class="grid" style="margin-top:18px">
+    <article class="card">
+      <div>
+        <div class="tag">Substack · Personal writing</div>
+        <h3>Things Teju Said</h3>
+        <p>Essays, observations and stories from my own corner of the internet.</p>
+      </div>
+      <a class="link" href="https://open.substack.com/pub/tejutheassistmuse" target="_blank" rel="noopener">Read on Substack <span>↗</span></a>
+    </article>
+
+    <article class="card">
+      <div>
+        <div class="tag">ASMA Creativo · Published writing</div>
+        <h3>Words written for brands.</h3>
+        <p>Published pieces and notes written for ASMA Creativo.</p>
+      </div>
+      <div>
+        <a class="link" href="https://substack.com/@asmacreativo/note/p-198856350?utm_source=notes-share-action&r=7w3c0d" target="_blank" rel="noopener">Read piece one <span>↗</span></a><br>
+        <a class="link" href="https://substack.com/@asmacreativo/note/p-197200681?utm_source=notes-share-action&r=7w3c0d" target="_blank" rel="noopener">Read piece two <span>↗</span></a>
+      </div>
+    </article>
+  </div>
+
+  <div class="note">The external publications are kept as live links so visitors can read the original published versions. As more work is added, this section can become a fuller writing archive.</div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <div>
+      <div class="kicker">Let’s make something worth reading.</div>
+      <h2>Have a story<br>in mind?</h2>
+    </div>
+    <div>
+      <p>For writing, copy, campaign concepts and storytelling projects.</p>
+      <a class="link" href="mailto:Sotunboolateju@gmail.com">Sotunboolateju@gmail.com <span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Olateju Aishat Sotunbo</span>
+  <span>Creative writer · Copywriter · Storyteller</span>
+</footer>
+</div>
+</body>
+</html>
